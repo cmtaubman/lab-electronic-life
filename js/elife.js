@@ -261,15 +261,15 @@ actionTypes.reproduce = function(critter, vector, action) {
 };
 
 function Plant() {
-  this.energy = 3 + Math.random() * 4;
+  this.energy = 2 + Math.random() * 2;
 }
 Plant.prototype.act = function(view) {
-  if (this.energy > 15) {
+  if (this.energy > 35) {
     var space = view.find(" ");
     if (space)
       return {type: "reproduce", direction: space};
   }
-  if (this.energy < 20)
+  if (this.energy < 80)
     return {type: "grow"};
 };
 

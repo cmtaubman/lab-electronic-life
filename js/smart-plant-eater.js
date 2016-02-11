@@ -1,21 +1,4 @@
-function SmartPlantEater() {};
-
-// SmartPlantEater.prototype.act = function(view) {
-//   // This is just a dummy behavior
-//   return {
-//     type: "move",
-//     direction: "e"
-//   };
-// };
-// function SmartPlantEater() {
-//   this.direction = randomElement(directionNames);
-// };
-
-// SmartPlantEater.prototype.act = function(view) {
-//   if (view.look(this.direction) != " ")
-//     this.direction = view.find(" ") || "s";
-//   return {type: "move", direction: this.direction};
-// };
+// function SmartPlantEater() {};
 
 function SmartPlantEater() {
   this.energy = 40;
